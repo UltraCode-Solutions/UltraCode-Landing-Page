@@ -33,3 +33,7 @@ body {
 .color-primary {
   @apply text-blue-600
 }
+
+.hero {
+  @apply background-color: red;
+}

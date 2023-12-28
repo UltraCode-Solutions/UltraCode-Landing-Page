@@ -8,6 +8,7 @@ const navLinks = [
    { title: "About", path: "#about", offset: -55 },
    { title: "Projects", path: "#projects", offset: -110 },
    { title: "Contact", path: "#contact", offset: -130 },
+   { title: "Work with Us", path: "#work", offset: -130 },
 ];
 
 export default function Navbar() {

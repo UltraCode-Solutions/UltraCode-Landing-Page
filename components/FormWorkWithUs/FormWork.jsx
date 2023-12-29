@@ -31,7 +31,11 @@ const FormWork = () => {
     }
   };
   const handleBlur = (field) => {
-    field.focused = false;
+    if(field.value.length > 0) {
+      field.focused = true;
+    } else {
+      field.focused = false;
+    }
     switch (field) {
       case name:
         setName({ ...field });
@@ -53,7 +57,7 @@ const FormWork = () => {
     >
       <h2 className="text-4xl text-white capitalize font-bold mb-12">Complete the application</h2>
       <div className="w-full flex flex-row items-center justify-center gap-16">
-        <Image src={sendImage} width={100} height={100} className='w-4/12'/>
+        <Image src={sendImage} width={100} height={100} className='w-4/12' alt="form-image" priority={true}/>
         <form onSubmit={handleFormSubmit} className="flex flex-col gap-4 justify-center items-center">
           <div className="flex justify-center items-center gap-6">
             <div className={`relative ${name.focused ? 'peer-focus:border-white peer-focus:border-3' : ''}`}>
@@ -70,8 +74,8 @@ const FormWork = () => {
               />
               <label
                 htmlFor="name"
-                className={`absolute left-2 top-2 text-gray-600 cursor-text peer-focus:font-medium peer-focus:text-xs peer-focus:-top-4 peer-focus:text-white transition-all ${
-                  (name.value || name.focused) && 'font-medium text-xs -top-4'
+                className={`absolute left-2 text-gray-600 cursor-text peer-focus:font-medium peer-focus:text-xs peer-focus:-top-4 peer-focus:text-white transition-all ${
+                  name.focused ? 'font-medium text-xs -top-4' : 'top-2.5'
                 }`}
               >
                 Full Name
@@ -91,8 +95,8 @@ const FormWork = () => {
               />
               <label
                 htmlFor="email"
-                className={`absolute left-2 top-2 text-gray-600 cursor-text peer-focus:font-medium peer-focus:text-xs peer-focus:-top-4 peer-focus:text-white transition-all ${
-                  (email.value || email.focused) && 'font-medium text-xs -top-4'
+                className={`absolute left-2 text-gray-600 cursor-text peer-focus:font-medium peer-focus:text-xs peer-focus:-top-4 peer-focus:text-white transition-all ${
+                  email.focused ? 'font-medium text-xs -top-4' : 'top-2.5'
                 }`}
               >
                 Email
@@ -114,8 +118,8 @@ const FormWork = () => {
               />
               <label
                 htmlFor="role"
-                className={`absolute left-2 top-2 text-gray-600 cursor-text peer-focus:font-medium peer-focus:text-xs peer-focus:-top-4 peer-focus:text-white transition-all ${
-                  (role.value || role.focused) && 'font-medium text-xs -top-4'
+                className={`absolute left-2 text-gray-600 cursor-text peer-focus:font-medium peer-focus:text-xs peer-focus:-top-4 peer-focus:text-white transition-all ${
+                  role.focused ? 'font-medium text-xs -top-4' : 'top-2.5'
                 }`}
               >
                 Role

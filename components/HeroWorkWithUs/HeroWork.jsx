@@ -16,7 +16,7 @@ const HeroWork = () => {
             Submit Resume
           </Link>
         </div>
-        <Image src={teamImage} width={100} height={100} className='w-6/12'/>
+        <Image src={teamImage} width={100} height={100} className='w-6/12' alt='hero-image' priority={true}/>
       </div>
     </section>
   )

@@ -43,7 +43,7 @@ export default function Navbar() {
 
    return (
       <nav
-         className={`fixed top-0 bottom-0 left-0 right-0 z-50 lg:mb-4 pb-4 pt-2 shadow-sticky backdrop-blur-sm ${
+         className={`fixed top-0 left-0 right-0 z-50 lg:mb-4 pb-4 pt-2 shadow-sticky backdrop-blur-sm ${
             scrolling ? "bg-[#24358d] bg-opacity-30" : "bg-transparent"
          }`}
       >

@@ -43,13 +43,13 @@ export default function Navbar() {
 
    return (
       <nav
-         className={`fixed top-0 left-0 right-0 z-50 lg:mb-4 pb-4 pt-2 shadow-sticky backdrop-blur-sm ${
-            scrolling ? "bg-[#24358d] bg-opacity-30" : "bg-transparent"
+         className={`fixed top-0 left-0 right-0 z-50 lg:mb-4 pb-4 pt-2 shadow-sticky ${
+            scrolling ? "bg-[#24358d] bg-opacity-30  backdrop-blur-sm" : "bg-transparent"
          }`}
       >
          <div className="flex flex-wrap items-center justify-between p-3 pb-0 font-medium">
             <Link href={"/"} className="ml-8 text-2xl md:text-3xl text-white font-semibold">
-               <p className="ml-4 text-base flex items-center md:text-3xl 2xl:text-4xl 2xl:mb-2">
+               <p className="ml-4 flex items-center text-2xl md:text-3xl 2xl:text-4xl 2xl:mb-2">
                   <span className="text-transparent bg-[#043D7A] bg-clip-text "></span>
                   <span className=" text-white bg-clip-text">UltraCode</span>
                </p>
@@ -58,7 +58,7 @@ export default function Navbar() {
                {navbarOpen ? (
                   <button
                      onClick={() => setNavbarOpen(false)}
-                     className="flex items-center rounded px-3 py-2 border border-black text-black "
+                     className="flex items-center rounded px-3 py-2 border border-white text-white "
                   >
                      <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ export default function Navbar() {
                   <button
                      onClick={() => setNavbarOpen(true)}
                      aria-label="Navbar Button"
-                     className="flex items-center rounded px-3 py-2 border border-black text-black"
+                     className="flex items-center rounded px-3 py-2 border border-white text-white hover:border-slate-200 hover:text-slate-200"
                   >
                      <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ export default function Navbar() {
                      ))}
                   </ul>
                </div>
-               <div className="text-white"> Darkmode</div>
+               <div className="text-white hidden md:block"> Darkmode</div>
             </div>
          </div>
          <ul className=" flex flex-col items-center">

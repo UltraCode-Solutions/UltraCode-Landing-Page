@@ -47,9 +47,9 @@ export default function Navbar() {
             scrolling ? "bg-[#24358d] bg-opacity-30  backdrop-blur-sm" : "bg-transparent"
          }`}
       >
-         <div className="flex flex-wrap items-center justify-between p-3 pb-0 font-medium">
+         <div className="flex items-center justify-between p-4 pb-0 font-medium">
             <Link href={"/"} className="ml-8 text-2xl md:text-3xl text-white font-semibold">
-               <p className="ml-4 flex items-center text-2xl md:text-3xl 2xl:text-4xl 2xl:mb-2">
+               <p className="ml-4 flex items-center text-2xl md:text-3xl 2xl:text-4xl">
                   <span className="text-transparent bg-[#043D7A] bg-clip-text "></span>
                   <span className=" text-white bg-clip-text">UltraCode</span>
                </p>

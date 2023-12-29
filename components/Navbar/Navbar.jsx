@@ -37,8 +37,8 @@ export default function Navbar() {
                      height={50}
                      alt="Picture of the author"
                   ></Image>
-                  <span className="text-transparent bg-[#043D7A] bg-clip-text ">Ultra</span>
-                  <span className=" text-black bg-clip-text">Code</span>
+                  <span className="text-transparent bg-[#043D7A] bgClipText">Ultra</span>
+                  <span className=" text-black bgClipText">Code</span>
                </p>
             </Link>
             <div className="mobile-menu block md:hidden">

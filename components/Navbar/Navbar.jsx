@@ -42,6 +42,18 @@ export default function Navbar() {
    };
 
    return (
+      <nav className="fixed top-0 left-0 right-0 bg-white bg-opacity-100 z-50 lg:bg-opacity-95 lg:mb-4 border-b-2 border-[#33353f] pb-3">
+         <div className="flex flex-wrap items-center justify-between  p-3 pb-0">
+            <Link href={"/"} className="text-2xl md:text-3xl text-white font-semibold">
+               <p className="ml-4 text-base flex items-center md:text-2xl 2xl:text-4xl 2xl:mb-2">
+                  <Image
+                     src="/ultracode.jpg"
+                     width={50}
+                     height={50}
+                     alt="Picture of the author"
+                  ></Image>
+                  <span className="text-transparent bg-[#043D7A] bgClipText">Ultra</span>
+                  <span className=" text-black bgClipText">Code</span>
       <nav
          className={`fixed top-0 left-0 right-0 z-50 lg:mb-4 pb-4 pt-2 shadow-sticky ${
             scrolling ? "bg-[#24358d] bg-opacity-30  backdrop-blur-sm" : "bg-transparent"

@@ -6,13 +6,13 @@ export default function Hero() {
    return (
       <section id="hero" className="w-full h-full relative">
          <div className="flex justify-center items-center h-screen">
-            <div className="flex h-full items-center justify-start bg-[#090E34] w-full dark:text-white z-0">
+            <div className="flex h-full items-center justify-center bg-[#090E34] w-full dark:text-white z-0">
                <div className="z-10">
-                  <div className="flex flex-col justify-center items-start ml-48 gap-y-10 relative">
-                     <h1 className="text-3xl text-white/90 uppercase font-bold">
+                  <div className="flex flex-col justify-center lg:items-start items-center gap-y-8 relative">
+                     <h1 className="lg:text-4xl text-[15px] md:text-3xl text-white/90 uppercase font-bold">
                         Las mejores soluciones con UltraCode
                      </h1>
-                     <p className="text-2xl text-white/70 w-2/3">
+                     <p className="lg:text-2xl md:text-xl text-white/70 lg:w-2/3 p-3">
                         Miles de soluciones en un lugar, da a crecer tu empresa con nuestro
                         servicio de desarollo web
                      </p>

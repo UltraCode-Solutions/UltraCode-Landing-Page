@@ -17,7 +17,7 @@ export default function Footer() {
                         UltraCode
                      </span>
                   </a>
-                  <p className="text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, autem magni sunt molestias dolorem a. Eaque eos provident ullam, beatae quidem voluptatum voluptatibus vitae magni harum iure quis ducimus aliquid.</p>
+                  <p className="text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, autem magni.</p>
                   <div className="flex space-x-5 mt-4">
 
                      <a href="#" className="text-gray-400 hover:text-blue-600 dark:hover:text-white">

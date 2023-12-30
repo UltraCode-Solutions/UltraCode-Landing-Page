@@ -1,34 +1,50 @@
+import { TypeAnimation } from "react-type-animation";
+
+
 export default function Hero() {
    return (
       <section id="hero" className="w-full h-full relative">
          <div className="flex justify-center items-center h-screen">
             <div className="flex h-full items-center justify-center bg-[#090E34] w-full dark:text-white z-0">
                <div className="z-10">
-                  <div className="flex flex-col justify-center lg:items-start items-center gap-y-8 relative">
-                     <h1 className="lg:text-4xl text-[15px] md:text-3xl text-white/90 uppercase font-bold">
-                        Las mejores soluciones con UltraCode
-                     </h1>
-                     <p className="lg:text-2xl md:text-xl text-white/70 lg:w-2/3 p-3">
-                        Miles de soluciones en un lugar, da a crecer tu empresa con nuestro
-                        servicio de desarollo web
-                     </p>
+                  <div className="flex flex-col justify-center lg:items-start items-center gap-y-2 relative">
 
-                     <div className="flex justify-center items-center gap-x-10">
-                        <a
-                           className="rounded-md bg-[#4A6CF7] py-3 px-10 text-base font-semibold  text-white duration-300 ease-in-out hover:bg-blue-500/60"
-                           href="#"
-                        >
-                           Contact
-                        </a>
-
-                        <a
-                           className="rounded-md bg-[#3A3E5D] py-3 px-10 text-base font-semibold  text-white duration-300 ease-in-out hover:bg-gray-500/60"
-                           href="#"
-                        >
-                           GitHub
-                        </a>
-                     </div>
-                  </div>
+                     <h1 className="lg:text-6xl text-[15px] md:text-3xl text-white/90 uppercase font-bold ">
+                        We Make <span className="text-gradient">Your Apps</span>
+                        </h1> 
+                        
+                        <TypeAnimation
+                        sequence={[
+                           "POWERFUL",
+                           1500,
+                           "ADAPTABLE",
+                           1500,
+                           "Better",
+                           1500
+                           
+                        ]}
+                        wrapper="h1"
+                        speed={20}
+                        style={{ fontSize: "4.6em", textTransform: "uppercase", color: "white", fontWeight: "bold", textAlign: "center", width: "100%"  }}
+                        
+                     />
+                        
+                        </div>
+                        <div className="flex justify-center items-center gap-x-10 mt-16">
+                           <a
+                              className="rounded-md bg-[#4A6CF7] py-3 px-10 text-base font-semibold  text-white duration-300 ease-in-out hover:bg-blue-500/60"
+                              href="#"
+                           >
+                              Contact
+                           </a>
+   
+                           <a
+                              className="rounded-md bg-[#3A3E5D] py-3 px-10 text-base font-semibold  text-white duration-300 ease-in-out hover:bg-gray-500/60"
+                              href="#"
+                           >
+                              GitHub
+                           </a>
+                        </div>
                </div>
 
                <div className="z-5 absolute top-0 right-0">
@@ -97,8 +113,8 @@ export default function Hero() {
                            y2="288"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7"></stop>
-                           <stop offset="1" stop-color="#4A6CF7" stop-opacity="0"></stop>
+                           <stop stopColor="#4A6CF7"></stop>
+                           <stop offset="1" stopColor="#4A6CF7" stopOpacity="0"></stop>
                         </linearGradient>
                         <radialGradient
                            id="paint1_radial_25:217"
@@ -110,10 +126,10 @@ export default function Hero() {
                         >
                            <stop
                               offset="0.145833"
-                              stop-color="#4A6CF7"
-                              stop-opacity="0"
+                              stopColor="#4A6CF7"
+                              stopOpacity="0"
                            ></stop>
-                           <stop offset="1" stop-color="#4A6CF7" stop-opacity="0.08"></stop>
+                           <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08"></stop>
                         </radialGradient>
                         <radialGradient
                            id="paint2_radial_25:217"
@@ -125,10 +141,10 @@ export default function Hero() {
                         >
                            <stop
                               offset="0.145833"
-                              stop-color="#4A6CF7"
-                              stop-opacity="0"
+                              stopColor="#4A6CF7"
+                              stopOpacity="0"
                            ></stop>
-                           <stop offset="1" stop-color="#4A6CF7" stop-opacity="0.08"></stop>
+                           <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.08"></stop>
                         </radialGradient>
                         <linearGradient
                            id="paint3_linear_25:217"
@@ -138,8 +154,8 @@ export default function Hero() {
                            y2="351.421"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7"></stop>
-                           <stop offset="1" stop-color="#4A6CF7" stop-opacity="0"></stop>
+                           <stop stopColor="#4A6CF7"></stop>
+                           <stop offset="1" stopColor="#4A6CF7" stopOpacity="0"></stop>
                         </linearGradient>
                         <linearGradient
                            id="paint4_linear_25:217"
@@ -149,8 +165,8 @@ export default function Hero() {
                            y2="448.882"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7"></stop>
-                           <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                           <stop stopColor="#4A6CF7"></stop>
+                           <stop offset="1" stopColor="white" stopOpacity="0"></stop>
                         </linearGradient>
                         <linearGradient
                            id="paint5_linear_25:217"
@@ -160,8 +176,8 @@ export default function Hero() {
                            y2="470"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7"></stop>
-                           <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                           <stop stopColor="#4A6CF7"></stop>
+                           <stop offset="1" stopColor="white" stopOpacity="0"></stop>
                         </linearGradient>
                         <linearGradient
                            id="paint6_linear_25:217"
@@ -171,8 +187,8 @@ export default function Hero() {
                            y2="338.63"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7"></stop>
-                           <stop offset="1" stop-color="#4A6CF7" stop-opacity="0"></stop>
+                           <stop stopColor="#4A6CF7"></stop>
+                           <stop offset="1" stopColor="#4A6CF7" stopOpacity="0"></stop>
                         </linearGradient>
                      </defs>
                   </svg>
@@ -225,8 +241,8 @@ export default function Hero() {
                            y2="212.24"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7" stop-opacity="0"></stop>
-                           <stop offset="1" stop-color="#4A6CF7"></stop>
+                           <stop stopColor="#4A6CF7" stopOpacity="0"></stop>
+                           <stop offset="1" stopColor="#4A6CF7"></stop>
                         </linearGradient>
                         <linearGradient
                            id="paint1_linear_25:218"
@@ -236,8 +252,8 @@ export default function Hero() {
                            y2="212.24"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7" stop-opacity="0"></stop>
-                           <stop offset="1" stop-color="#4A6CF7"></stop>
+                           <stop stopColor="#4A6CF7" stopOpacity="0"></stop>
+                           <stop offset="1" stopColor="#4A6CF7"></stop>
                         </linearGradient>
                         <linearGradient
                            id="paint2_linear_25:218"
@@ -247,8 +263,8 @@ export default function Hero() {
                            y2="212.24"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7" stop-opacity="0"></stop>
-                           <stop offset="1" stop-color="#4A6CF7"></stop>
+                           <stop stopColor="#4A6CF7" stopOpacity="0"></stop>
+                           <stop offset="1" stopColor="#4A6CF7"></stop>
                         </linearGradient>
                         <linearGradient
                            id="paint3_linear_25:218"
@@ -258,8 +274,8 @@ export default function Hero() {
                            y2="210.214"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7" stop-opacity="0"></stop>
-                           <stop offset="1" stop-color="#4A6CF7"></stop>
+                           <stop stopColor="#4A6CF7" stopOpacity="0"></stop>
+                           <stop offset="1" stopColor="#4A6CF7"></stop>
                         </linearGradient>
                         <linearGradient
                            id="paint4_linear_25:218"
@@ -269,8 +285,8 @@ export default function Hero() {
                            y2="99.5816"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7"></stop>
-                           <stop offset="1" stop-color="#4A6CF7" stop-opacity="0"></stop>
+                           <stop stopColor="#4A6CF7"></stop>
+                           <stop offset="1" stopColor="#4A6CF7" stopOpacity="0"></stop>
                         </linearGradient>
                         <radialGradient
                            id="paint5_radial_25:218"
@@ -280,8 +296,8 @@ export default function Hero() {
                            gradientUnits="userSpaceOnUse"
                            gradientTransform="translate(220 63) rotate(90) scale(43)"
                         >
-                           <stop offset="0.145833" stop-color="white" stop-opacity="0"></stop>
-                           <stop offset="1" stop-color="white" stop-opacity="0.08"></stop>
+                           <stop offset="0.145833" stopColor="white" stopOpacity="0"></stop>
+                           <stop offset="1" stopColor="white" stopOpacity="0.08"></stop>
                         </radialGradient>
                      </defs>
                   </svg>
@@ -334,8 +350,8 @@ export default function Hero() {
                            y2="212.24"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7" stop-opacity="0"></stop>
-                           <stop offset="1" stop-color="#4A6CF7"></stop>
+                           <stop stopColor="#4A6CF7" stopOpacity="0"></stop>
+                           <stop offset="1" stopColor="#4A6CF7"></stop>
                         </linearGradient>
                         <linearGradient
                            id="paint1_linear_25:218"
@@ -345,8 +361,8 @@ export default function Hero() {
                            y2="212.24"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7" stop-opacity="0"></stop>
-                           <stop offset="1" stop-color="#4A6CF7"></stop>
+                           <stop stopColor="#4A6CF7" stopOpacity="0"></stop>
+                           <stop offset="1" stopColor="#4A6CF7"></stop>
                         </linearGradient>
                         <linearGradient
                            id="paint2_linear_25:218"
@@ -356,8 +372,8 @@ export default function Hero() {
                            y2="212.24"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7" stop-opacity="0"></stop>
-                           <stop offset="1" stop-color="#4A6CF7"></stop>
+                           <stop stopColor="#4A6CF7" stopOpacity="0"></stop>
+                           <stop offset="1" stopColor="#4A6CF7"></stop>
                         </linearGradient>
                         <linearGradient
                            id="paint3_linear_25:218"
@@ -367,8 +383,8 @@ export default function Hero() {
                            y2="210.214"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7" stop-opacity="0"></stop>
-                           <stop offset="1" stop-color="#4A6CF7"></stop>
+                           <stop stopColor="#4A6CF7" stopOpacity="0"></stop>
+                           <stop offset="1" stopColor="#4A6CF7"></stop>
                         </linearGradient>
                         <linearGradient
                            id="paint4_linear_25:218"
@@ -378,8 +394,8 @@ export default function Hero() {
                            y2="99.5816"
                            gradientUnits="userSpaceOnUse"
                         >
-                           <stop stop-color="#4A6CF7"></stop>
-                           <stop offset="1" stop-color="#4A6CF7" stop-opacity="0"></stop>
+                           <stop stopColor="#4A6CF7"></stop>
+                           <stop offset="1" stopColor="#4A6CF7" stopOpacity="0"></stop>
                         </linearGradient>
                         <radialGradient
                            id="paint5_radial_25:218"
@@ -389,8 +405,8 @@ export default function Hero() {
                            gradientUnits="userSpaceOnUse"
                            gradientTransform="translate(220 63) rotate(90) scale(43)"
                         >
-                           <stop offset="0.145833" stop-color="white" stop-opacity="0"></stop>
-                           <stop offset="1" stop-color="white" stop-opacity="0.08"></stop>
+                           <stop offset="0.145833" stopColor="white" stopOpacity="0"></stop>
+                           <stop offset="1" stopColor="white" stopOpacity="0.08"></stop>
                         </radialGradient>
                      </defs>
                   </svg>

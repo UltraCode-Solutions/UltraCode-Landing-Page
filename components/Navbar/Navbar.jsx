@@ -3,19 +3,20 @@ import Link from "next/link";
 import NavLink from "./Navlink";
 import { useState } from "react";
 import NavMobile from "./NavMobile";
-import Image from "next/image.js";
 import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 const navLinks = [
    { title: "About", path: "#about", offset: -55 },
    { title: "Projects", path: "#projects", offset: -110 },
    { title: "Contact", path: "#contact", offset: -130 },
-   { title: "Work with Us", path: "#work", offset: -130 },
+   { title: "Work with Us", path: "/work-with-us", offset: -130 },
 ];
 
 export default function Navbar() {
    const [navbarOpen, setNavbarOpen] = useState(false);
    const [scrolling, setScrolling] = useState(false);
+   const router = useRouter();
 
    const handleScroll = () => {
       const offset = window.scrollY;
@@ -29,14 +30,18 @@ export default function Navbar() {
       };
    }, []);
    const scrollToSection = (path, offset) => {
-      const element = document.querySelector(path);
-      if (element) {
-         const offsetTop = element.offsetTop + offset;
-         window.scrollTo({
-            top: offsetTop,
-            behavior: "smooth",
-         });
-         setNavbarOpen(false);
+      if (path.startsWith("/")) {
+         router.push(path);
+      } else {
+         const element = document.querySelector(path);
+         if (element) {
+            const offsetTop = element.offsetTop + offset;
+            window.scrollTo({
+               top: offsetTop,
+               behavior: "smooth",
+            });
+            setNavbarOpen(false);
+         }
       }
    };
 
@@ -97,11 +102,8 @@ export default function Navbar() {
                   </button>
                )}
             </div>
-            <div className="flex justify-between w-3/4">
-               <div
-                  className="menu hidden md:flex md:w-auto z-50 justify-between "
-                  id="navbar"
-               >
+            <div className=" hidden md:flex md:justify-between md:w-3/4">
+               <div className="menu md:flex md:w-auto z-50 justify-between " id="navbar">
                   <ul className="flex md:space-x-8">
                      {navLinks.map((link, index) => (
                         <li key={index}>

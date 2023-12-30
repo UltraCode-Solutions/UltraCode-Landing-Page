@@ -29,3 +29,10 @@ body {
 .color-primary {
   @apply text-blue-600
 }
+
+.text-gradient {
+   @apply bg-gradient-to-br from-cyan-500 via-blue-500 to-[#05498D] ;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+}

@@ -4,8 +4,8 @@ import teamImage from './team-amico.svg';
 const HeroWork = () => {
   return (
     <section className="w-full h-screen bg-[#090E34] flex justify-center items-center">
-      <div className='w-9/12 flex flex-row justify-between items-center'>
-        <div className='w-full flex flex-col justify-center items-start gap-4'>
+      <div className='w-9/12 flex flex-row justify-between items-center max-lg:flex-col gap-8'>
+        <div className='w-full flex flex-col justify-center items-start text-start gap-4 max-lg:text-center max-lg:items-center'>
           <h1 className="text-4xl text-white capitalize font-bold">Work with us</h1>
           <p className="text-lg text-white">
             Are you seeking new professional opportunities? You're in the right place! At UltraCode, we value talent and dedication. We're in constant growth and on the lookout for passionate individuals who want to be part of our extraordinary team.
@@ -16,7 +16,7 @@ const HeroWork = () => {
             Submit Resume
           </Link>
         </div>
-        <Image src={teamImage} width={100} height={100} className='w-6/12' alt='hero-image' priority={true}/>
+        <Image src={teamImage} width={100} height={100} className='w-6/12 max-lg:w-10/12 max-md:12/12 max-sm:w-full' alt='hero-image' priority={true}/>
       </div>
     </section>
   )

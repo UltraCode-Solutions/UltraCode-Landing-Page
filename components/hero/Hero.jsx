@@ -18,7 +18,7 @@ export default function Hero() {
                      </p>
 
                      <div className="flex justify-center items-center gap-x-10">
-                     <a className="rounded-md bg-[#4A6CF7] py-3 px-10 text-base font-semibold  text-white duration-300 ease-in-out hover:bg-blue-500/60" href="#">Contact</a>
+                     <a className="rounded-md bg-[#4A6CF7] py-3 px-10 text-base font-semibold  text-white duration-300 ease-in-out hover:bg-blue-500/60" href="#contact">Contact</a>
 
                      <a className="rounded-md bg-[#3A3E5D] py-3 px-10 text-base font-semibold  text-white duration-300 ease-in-out hover:bg-gray-500/60" href="#">GitHub</a>
                      </div>

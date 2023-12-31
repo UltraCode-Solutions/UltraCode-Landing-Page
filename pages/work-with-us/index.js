@@ -4,7 +4,7 @@ import Footer from "@/components/Footer/Footer";
 import FormWork from "@/components/FormWorkWithUs/FormWork";
 
 export default function WorkWithUs() {
-  return <div className="flex min-h-screen flex-col bg-[#ffffff]">
+  return <div className="flex flex-col bg-[#090E34] m-0 p-0">
     <Navbar/>
     <HeroWork/>
     <FormWork/>

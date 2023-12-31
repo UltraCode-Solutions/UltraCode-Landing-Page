@@ -53,13 +53,13 @@ const FormWork = () => {
   return (
     <section
       id="form-work"
-      className="bg-[#090E34] w-full h-screen flex flex-col items-center justify-center"
+      className="bg-[#090E34] w-full h-screen flex flex-col items-center justify-center pt-12"
     >
-      <h2 className="text-4xl text-white capitalize font-bold mb-12">Complete the application</h2>
-      <div className="w-full flex flex-row items-center justify-center gap-16">
-        <Image src={sendImage} width={100} height={100} className='w-4/12' alt="form-image" priority={true}/>
-        <form onSubmit={handleFormSubmit} className="flex flex-col gap-4 justify-center items-center">
-          <div className="flex justify-center items-center gap-6">
+      <h2 className="text-4xl text-white capitalize font-bold mb-12 text-center">Complete the application</h2>
+      <div className="w-full flex flex-row items-center justify-center gap-16 max-md:flex-col">
+        <Image src={sendImage} width={100} height={100} className='w-4/12 max-lg:w-6/12 max-sm:w-full' alt="form-image" priority={true}/>
+        <form onSubmit={handleFormSubmit} className="flex flex-col gap-4 justify-center items-center max-lg:gap-2">
+          <div className="flex justify-center items-center gap-6 max-lg:flex-col max-lg:gap-4">
             <div className={`relative ${name.focused ? 'peer-focus:border-white peer-focus:border-3' : ''}`}>
               <input
                 type="text"
@@ -68,7 +68,7 @@ const FormWork = () => {
                 onChange={(e) => setName({ ...name, value: e.target.value })}
                 onFocus={() => handleFocus(name)}
                 onBlur={() => handleBlur(name)}
-                className="w-64 bg-transparent border-2 py-2 px-2 focus:outline-none peer rounded-lg"
+                className="w-64 bg-transparent border-2 py-2 px-2 focus:outline-none peer rounded-lg max-md:w-72"
                 autoComplete="off"
                 required
               />
@@ -89,7 +89,7 @@ const FormWork = () => {
                 onChange={(e) => setEmail({ ...email, value: e.target.value })}
                 onFocus={() => handleFocus(email)}
                 onBlur={() => handleBlur(email)}
-                className="w-64 bg-transparent border-2 py-2 px-2 focus:outline-none peer rounded-lg"
+                className="w-64 bg-transparent border-2 py-2 px-2 focus:outline-none peer rounded-lg max-md:w-72"
                 autoComplete="off"
                 required
               />
@@ -103,7 +103,7 @@ const FormWork = () => {
               </label>
             </div>
           </div>
-          <div className="flex justify-center items-center gap-6">
+          <div className="flex justify-center items-center gap-6 max-lg:flex-col max-lg:gap-4">
             <div className={`relative ${role.focused ? 'peer-focus:border-white peer-focus:border-3' : ''}`}>
               <input
                 type="text"
@@ -112,7 +112,7 @@ const FormWork = () => {
                 onChange={(e) => setRole({ ...role, value: e.target.value })}
                 onFocus={() => handleFocus(role)}
                 onBlur={() => handleBlur(role)}
-                className="w-64 bg-transparent border-2 py-2 px-2 focus:outline-none peer rounded-lg"
+                className="w-64 bg-transparent border-2 py-2 px-2 focus:outline-none peer rounded-lg max-md:w-72"
                 autoComplete="off"
                 required
               />
@@ -129,10 +129,10 @@ const FormWork = () => {
               <div>
                 <Label htmlFor="file-upload-helper-text" value="Upload Resume" className="text-white text-xs font-medium" />
               </div>
-              <FileInput id="file-upload-helper-text" helperText=".pdf, .doc, .docx" accept=".pdf,.doc,.docx" required />
+              <FileInput id="file-upload-helper-text" helperText=".pdf, .doc, .docx" accept=".pdf,.doc,.docx" className="max-md:w-72" required />
             </div>
           </div>
-          <button type="submit" className="w-1/2 rounded-md bg-[#4A6CF7] py-3 px-10 mt-6 text-base capitalize font-semibold  text-white duration-300 ease-in-out hover:bg-blue-500/60">
+          <button type="submit" className="w-1/2 max-lg:w-full rounded-md bg-[#4A6CF7] py-3 px-10 mt-6 text-base capitalize font-semibold  text-white duration-300 ease-in-out hover:bg-blue-500/60">
             Submit Resume
           </button>
         </form>
